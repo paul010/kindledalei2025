@@ -23,7 +23,7 @@
 ## 已经回到桌面上了
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/paul010/kindledalei2025/main/docs/images/kindle-in-use.jpg?v=f6a63fe" width="520" alt="Kindle 第八代实机照片：显示旅顺口天气、国庆猫咪、晨跑鼓励及 Codex 用量" />
+<img src="https://raw.githubusercontent.com/paul010/kindledalei2025/main/docs/images/kindle-in-use.jpg?v=privacy1" width="520" alt="Kindle 第八代实机照片：显示旅顺口天气、国庆猫咪、晨跑鼓励及 Codex 用量" />
 </div>
 
 **2026 年 9 月 6 日，Kindle 第八代实机效果。** 国庆趴在文案右边，下面是 Codex 与 Spark 的额度，以及累计 Token 的书本类比。这张照片记录了看板在墨水屏上的实际显示；重启自启效果尚未通过本图验证。
@@ -31,7 +31,7 @@
 ### 贝果也来值班了
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/paul010/kindledalei2025/main/docs/images/kindle-beiguo-in-use.jpg?v=f6a63fe" width="520" alt="贝果出现在 Kindle 实机看板上，画面时间为 14:01" />
+<img src="https://raw.githubusercontent.com/paul010/kindledalei2025/main/docs/images/kindle-beiguo-in-use.jpg?v=privacy1" width="520" alt="贝果出现在 Kindle 实机看板上，画面时间为 14:01" />
 </div>
 
 同一天的另一张实拍：看板时间从上一张的 **14:00** 到这一张的 **14:01**，右侧从国庆换成了贝果。两张照片记录了不同轮换帧在真实墨水屏上的显示。
@@ -39,7 +39,7 @@
 ## 一眼看见今天
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/paul010/kindledalei2025/main/docs/images/dashboard.png?v=f6a63fe" width="420" alt="大雷的 Kindle 看板：时间、旅顺天气、晨跑鼓励、猫咪、Codex 和 Spark 额度，以及累计 Token 类比" />
+<img src="https://raw.githubusercontent.com/paul010/kindledalei2025/main/docs/images/dashboard.png?v=privacy1" width="420" alt="大雷的 Kindle 看板：时间、旅顺天气、晨跑鼓励、猫咪、Codex 和 Spark 额度，以及累计 Token 类比" />
 </div>
 
 > 上图为实际运行程序生成的 **600 × 800 PNG**，不是设备实拍，也不是概念稿。截图中的天气和用量是抓取时的快照，不代表此刻的数据。
@@ -74,7 +74,7 @@
 
 点点大哥走丢了，也给他留了一个位置。
 
-![国庆、贝果与点点大哥的三帧轮换预览](https://raw.githubusercontent.com/paul010/kindledalei2025/main/docs/images/cat-lineup.png?v=f6a63fe)
+![国庆、贝果与点点大哥的三帧轮换预览](https://raw.githubusercontent.com/paul010/kindledalei2025/main/docs/images/cat-lineup.png?v=privacy1)
 
 *上图把三个轮换时刻并排展示；Kindle 上每次显示一位。三个画面共用一次抓取的数据，用于查看造型和布局。*
 
@@ -83,13 +83,13 @@
 
 #### 国庆的六个动作
 
-![国庆的六个专属造型](https://raw.githubusercontent.com/paul010/kindledalei2025/main/docs/images/guoqing.png?v=f6a63fe)
+![国庆的六个专属造型](https://raw.githubusercontent.com/paul010/kindledalei2025/main/docs/images/guoqing.png?v=privacy1)
 
 #### 贝果与点点大哥
 
 上排是贝果，下排是点点大哥。
 
-![贝果与点点大哥的专属造型](https://raw.githubusercontent.com/paul010/kindledalei2025/main/docs/images/beiguo-diandian.png?v=f6a63fe)
+![贝果与点点大哥的专属造型](https://raw.githubusercontent.com/paul010/kindledalei2025/main/docs/images/beiguo-diandian.png?v=privacy1)
 
 </details>
 

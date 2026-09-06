@@ -1,0 +1,16 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+auth.json
+credentials*.json
+# Runtime data, logs, backups and device configuration
+out/
+logs/
+*.log
+backups/
+dash-autostart.env
+weather-location.json
+.DS_Store
