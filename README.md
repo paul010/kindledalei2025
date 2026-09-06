@@ -117,7 +117,7 @@ flowchart LR
 
 本地使用 Kindle 第八代（KT3）、600 × 800 看板、Mac Mini、Node.js 和 Chrome 无界面截图。Mac 通过 LaunchAgent 在用户登录后启动服务；Kindle 使用脚本拉取图片，支持配置 Upstart 启动任务。
 
-**当前仓库是项目展示与来源记录页，尚未同步本地改造源码。** 需要研究基础实现，可以从下方的来源项目开始。越狱方法取决于具体型号和固件，请查阅 [KindleModding](https://kindlemodding.org/) 的当前指南。
+**当前仓库已包含本地改造源码。** Mac Mini 运行步骤见 [运行指南](docs/SETUP.md)，基础实现与致谢见下方来源项目。越狱方法取决于具体型号和固件，请查阅 [KindleModding](https://kindlemodding.org/) 的当前指南。
 
 ### 数据该怎么读
 
