@@ -273,5 +273,17 @@
       "贝果 · 陪跑员",
       "点点大哥"
     ]
+  },
+  "activity": {
+    "title": "Token 活动",
+    "peak": "单日峰值",
+    "streak": "当前连续",
+    "record": "最长连续",
+    "days": "天",
+    "less": "少",
+    "more": "多",
+    "missing": "斜线为未返回记录",
+    "range": "近 52 周",
+    "total": "累计 Token"
   }
 }

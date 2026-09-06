@@ -22,6 +22,8 @@
 
 ## 已经回到桌面上了
 
+以下两张为上一版布局的实拍；新版统计布局见下方「一眼看见今天」。
+
 <div align="center">
 <img src="https://raw.githubusercontent.com/paul010/kindledalei2025/main/docs/images/kindle-in-use.jpg?v=privacy1" width="520" alt="Kindle 第八代实机照片：显示旅顺口天气、国庆猫咪、晨跑鼓励及 Codex 用量" />
 </div>
@@ -39,7 +41,7 @@
 ## 一眼看见今天
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/paul010/kindledalei2025/main/docs/images/dashboard.png?v=privacy1" width="420" alt="大雷的 Kindle 看板：时间、旅顺天气、晨跑鼓励、猫咪、Codex 和 Spark 额度，以及累计 Token 类比" />
+<img src="https://raw.githubusercontent.com/paul010/kindledalei2025/main/docs/images/dashboard.png?v=activity-v2" width="420" alt="大雷的 Kindle 看板：时间、旅顺天气、晨跑鼓励、猫咪、Codex 和 Spark 额度，以及累计 Token 类比" />
 </div>
 
 > 上图为实际运行程序生成的 **600 × 800 PNG**，不是设备实拍，也不是概念稿。截图中的天气和用量是抓取时的快照，不代表此刻的数据。
@@ -51,7 +53,8 @@
 | 中间 | 「大雷，早上好」和晨跑鼓励 | 每 5 分钟轮换一句 |
 | 文案右侧 | 三只猫的专属黑白造型 | 每分钟轮换，下一次出场更换动作 |
 | 下方两张卡片 | Codex 每周余额、最近日 Token、Spark 额度 | 约每分钟更新 |
-| 最下方 | 累计 Token 与书本数量类比 | 随账户统计更新 |
+| 中部大数字 | 累计 Token 与书本数量类比 | 随账户统计更新 |
+| 统计与热力图 | 单日峰值、当前及最长连续天数、近 52 周活动 | 按真实每日用量绘制，斜线表示未返回记录 |
 
 ### 数字也可以说人话
 
@@ -76,7 +79,7 @@
 
 ![国庆、贝果与点点大哥的三帧轮换预览](https://raw.githubusercontent.com/paul010/kindledalei2025/main/docs/images/cat-lineup.png?v=privacy1)
 
-*上图把三个轮换时刻并排展示；Kindle 上每次显示一位。三个画面共用一次抓取的数据，用于查看造型和布局。*
+*上图把三个轮换时刻并排展示；Kindle 上每次显示一位。三个画面共用一次抓取的数据，用于查看造型和布局，采用此前的布局。*
 
 <details>
 <summary>展开看三只猫的完整造型</summary>
@@ -125,7 +128,7 @@ flowchart LR
 - 主账户未返回五小时窗口时，不推算余额；这个位置显示**最近有记录的一天**的 Token 用量，并标明日期。
 - 最近日用量不一定是今天的数据，累计 Token 也不等于剩余额度。
 - 获取失败时标注旧数据或不可用，不把缺失数据当成 0。
-- 本地实现完成了 37 项自动化测试，覆盖额度、天气、轮换与数据换算等逻辑；这不等于所有 Kindle 型号都已验证。
+- 本地实现完成了 38 项自动化测试，覆盖额度、天气、轮换与数据换算等逻辑；这不等于所有 Kindle 型号都已验证。
 
 ## 安装与运行
 
