@@ -142,7 +142,7 @@ async function render() {
       '--hide-scrollbars',
       '--force-device-scale-factor=1',
       `--window-size=${positiveInt(process.env.DASH_WIDTH, 1072)},${positiveInt(process.env.DASH_HEIGHT, 1448)}`,
-      `--user-data-dir=${path.join(OUT, 'chrome-profile')}`, 
+      `--user-data-dir=${path.join(OUT, 'chrome-profile')}`,
       '--timeout=15000',
       `--screenshot=${tempImage}`,
       `http://127.0.0.1:${PORT}/render${process.env.DASH_PROFILE === "codex" ? "?profile=codex" : ""}`,
