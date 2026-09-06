@@ -8,7 +8,7 @@
 
 **旅顺口天气 · 晨跑文案 · 国庆 / 贝果 / 点点大哥 · Codex 用量**
 
-[看板截图](#一眼看见今天) · [三只猫](#这块屏幕里住着三只猫) · [项目来源](#从哪里来)
+[安装运行](#安装与运行) · [看板截图](#一眼看见今天) · [三只猫](#这块屏幕里住着三只猫) · [项目来源](#从哪里来)
 
 </div>
 
@@ -126,6 +126,67 @@ flowchart LR
 - 最近日用量不一定是今天的数据，累计 Token 也不等于剩余额度。
 - 获取失败时标注旧数据或不可用，不把缺失数据当成 0。
 - 本地实现完成了 37 项自动化测试，覆盖额度、天气、轮换与数据换算等逻辑；这不等于所有 Kindle 型号都已验证。
+
+## 安装与运行
+
+以下步骤用于 **Mac 独立看板模式**。需要 Node.js 24+、Google Chrome，以及已安装并登录的 Codex CLI。Kindle 端需要提前准备好适配型号和固件的环境及 FBInk。
+
+### 1. 下载代码并安装依赖
+
+```sh
+git clone https://github.com/paul010/kindledalei2025.git
+cd kindledalei2025
+npm ci --ignore-scripts --omit=dev
+mkdir -p out
+```
+
+### 2. 设置天气城市
+
+创建本地文件 `out/weather-location.json`。下面以北京城市中心为例，修改城市名称和经纬度即可：
+
+```sh
+cat > out/weather-location.json <<'EOF'
+{"name":"北京","latitude":39.90,"longitude":116.40}
+EOF
+```
+
+使用城市中心坐标即可，无需填写家庭精确位置。该文件位于忽略目录中，不会随代码提交。
+
+### 3. 启动看板
+
+```sh
+DASH_PROFILE=codex DASH_WIDTH=600 DASH_HEIGHT=800 RENDER_INTERVAL=60 npm run supervisor
+```
+
+首次生成稍等片刻，然后打开 [本机看板](http://localhost:8787/dash.png)。默认每分钟生成一次 600 × 800 图片；终端按 `Ctrl+C` 停止服务。
+
+如果找不到 Codex 或 Chrome，可通过 `CODEX_BIN`、`CHROME` 环境变量指定其可执行文件的绝对路径。Codex 使用本机登录状态，请勿把登录凭据复制进项目。
+
+### 4. 让 Kindle 显示图片
+
+让 Mac 和 Kindle 连接到相互可访问的局域网。通过 USB 将 `kindle/dash-loop.sh` 复制到 Kindle 根目录，再在 Kindle 的终端或脚本启动器中运行：
+
+```sh
+PC='http://<MAC_LAN_IP>:8787/dash.png' INTERVAL=60 FULL_EVERY=10 sh /mnt/us/dash-loop.sh
+```
+
+将 `<MAC_LAN_IP>` 替换为自己 Mac 的局域网地址。命令在 **Kindle 上**执行；Mac 上的看板服务需保持运行。不同屏幕尺寸需要相应调整渲染参数与布局。
+
+服务用于可信局域网，图片包含账户用量，不要将端口映射到公网。代码不包含越狱包；设备准备请参考 [KindleModding](https://kindlemodding.org/)。
+
+### 自启、修改与验证
+
+Mac 登录后自启可配置 LaunchAgent；Kindle 的自启脚本及安装工具在 `kindle/` 和 `scripts/kindle-autostart.js`。详细步骤和验证限制见 [运行指南](docs/SETUP.md) 与 [Kindle 安装文档](KINDLE-INSTALLATION.md)。
+
+晨跑文案与猫咪名称在 `locales/zh-CN.json`，看板布局在 `backend/codex-page.js`，猫咪动作素材在 `render/assets/`。
+
+运行测试：
+
+```sh
+npm test
+```
+
+上述安装只针对独立看板服务。仓库同时保留上游 Electron 界面；开发该界面需另装开发依赖，macOS 打包安装尚未验证。
 
 ## 从哪里来
 
