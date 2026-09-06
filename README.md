@@ -20,6 +20,14 @@
 
 于是，这块屏幕有了自己的样子。
 
+## 已经回到桌面上了
+
+<div align="center">
+<img src="docs/images/kindle-in-use.jpg" width="520" alt="Kindle 第八代实机照片：显示旅顺口天气、国庆猫咪、晨跑鼓励及 Codex 用量" />
+</div>
+
+**2026 年 9 月 6 日，Kindle 第八代实机效果。** 国庆趴在文案右边，下面是 Codex 与 Spark 的额度，以及累计 Token 的书本类比。这张照片记录了看板在墨水屏上的实际显示；重启自启效果尚未通过本图验证。
+
 ## 一眼看见今天
 
 <div align="center">
